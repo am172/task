@@ -1,0 +1,38 @@
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .animate-bounce {
+    animation: bounce 0.5s ease-in-out;
+  }
+  
+  .note-card {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: #f3f4f6; /* لون الخلفية الافتراضي */
+    transition: background-color 0.3s;
+  }
+  
+  .note-card.completed {
+    background-color: rgba(131, 238, 131, 0.327); /* لون أخضر أخف */
+  }
+  
+  .note-card h2 {
+    font-size: 1.5rem; /* حجم الخط */
+    margin: 0;
+    display: flex;
+    align-items: center; /* محاذاة عموديّة */
+  }
+  
+  .note-card h2 .done {
+    font-size: 0.75rem; /* حجم الخط لكلمة "Done" أصغر */
+    color: #32CD32; /* لون كلمة "Done" */
+    margin-left: 1rem; /* مسافة بسيطة بين العنوان وكلمة "Done" */
+  }
+  
